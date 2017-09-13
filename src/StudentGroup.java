@@ -201,20 +201,20 @@ public class StudentGroup implements StudentArrayOperation {
 		// Add your implementation here
 		int a=0;
 		
-		for(int i=0;i<students.length;i++)
+		for(int i=0;i<this.students.length;i++)
 		{
-			if(students[i]==student)
+			if(this.students[i]==student)
 			{
-				for(int j=i+1;j<students.length;j++)
+				for(int j=i+1;j<this.students.length;j++)
 				{
-					students[a++]=students[j];
+					this.students[a++]=this.students[j];
 				}
 				break;
 			}
 		}
 		for(int i=a;i<students.length;i++)
 		{
-			students[i]=null;
+			this.students[i]=null;
 		}
 	}
 
